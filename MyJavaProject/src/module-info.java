@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * @author ajaykumar
+ *
+ */
+module MyJavaProject {
+}

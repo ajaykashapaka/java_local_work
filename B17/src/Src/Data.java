@@ -1,0 +1,50 @@
+package Src;
+ interface Dto
+ {
+	public DtoImpl sum(int a,int b);
+ 
+ }
+ class DtoImpl implements Dto
+ {
+
+	public DtoImpl sum(int x,int y ) 
+	{ 
+		Beans b=new Beans();
+		b.SetA(x);
+		b.SetB(y);
+		return b;
+	}
+
+  
+ }
+ class Beans extends DtoImpl
+ {
+	 private int a;
+	 private int b;
+	 public void SetA(int a)
+	 {
+		 this.a=a;
+	 }
+	 public void SetB(int b)
+	 {
+		 this.b=b;
+	 }
+	 public int getA()
+	 {
+		 return a;
+	 }
+	 public int getB()
+	 {
+		return b;
+	 }
+ }
+ 
+public class Data 
+{
+	public static void main(String[] args) 
+	{
+	  DtoImpl d=new DtoImpl();
+	  d.sum(10,20 );
+	   System.out.println();
+	}
+}

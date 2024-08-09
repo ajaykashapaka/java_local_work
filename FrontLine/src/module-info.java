@@ -1,0 +1,2 @@
+module FrontLine {
+}

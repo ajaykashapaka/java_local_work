@@ -1,0 +1,38 @@
+package Source;
+
+public class Fib
+{
+	public static void main(String[] args)
+	{ 
+		/*int first=0,second=1,third;
+		 -->fibobic series
+		 
+		for(int i=0;i<=10;i++)  //
+		{
+			third=first+second; //0+1=1
+			System.out.print(third+" ");
+			first=second; // 
+			second=third; // s=1
+			 
+		} */
+		
+		int num=7;
+		int count =0;
+		for(int i=1;i<=num;i++)  //1
+		{
+			if(num%i==0) //7%1==0;  
+			{
+				count++;
+				System.out.println(count);
+			}
+		}
+		if(count==2)
+		{
+			System.out.println("prime");
+		}
+		else
+			System.out.println("not prime");
+		
+	}
+
+}

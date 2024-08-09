@@ -1,0 +1,11 @@
+
+public class Tcs
+{
+	public static void main(String[] args) 
+	{ 
+		
+		int a=9;
+       System.out.println(a);
+       System.out.println("my name is ajaykumar");
+	}
+}

@@ -1,0 +1,32 @@
+package ARRAYS;
+public class AmstrongInArray
+{
+	public static void main(String[] args) 
+	{ 
+		int [] a=new int[] {153,33,56,88,923};
+		int rem,sum=1,i,count,temp;
+		for(i=0;i<a.length;i++)
+		{
+			sum=0;
+			temp=a[i];
+			count=0;
+			while(a[i]>0)
+			{
+				count++;
+				a[i]=a[i]/10;	
+			}
+			a[i]=temp;
+			while(a[i]>0)
+			{
+				rem=a[i]%10;
+				a[i]=a[i]/10;
+				sum=(int) (sum+Math.pow(rem,count));
+			}
+			a[i]=temp;
+			if(sum==a[i])
+				System.out.println("arm"+a[i]);
+			else 
+				System.out.println("not a arm");
+		}
+	}
+}

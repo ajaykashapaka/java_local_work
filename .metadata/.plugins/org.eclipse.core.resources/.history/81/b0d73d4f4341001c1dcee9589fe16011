@@ -1,0 +1,23 @@
+
+public class Demo
+{
+	public static void main(String[] args) 
+	{ 
+		Nikhil A1=new Nikhil();
+		A1.villege="nrt";
+		A1.houseno=23;
+		A1.area='L';
+		A1.detais();
+	}
+}
+class Nikhil
+{
+	String villege;
+	int houseno;
+	char area;
+	public void detais () 
+	{
+		System.out.println(villege+" "+houseno+" "+area);
+	}
+	
+}

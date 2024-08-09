@@ -1,0 +1,19 @@
+package Source;
+
+public class Fib {
+
+	public static void main(String[] args)
+	{ 
+		int f=0,s=1,t;
+		
+		for(int i=0;i<=10;i++)
+		{
+			t=f+s;
+			System.out.println(t);
+			s=t;
+			f=s;
+		}
+		
+	}
+
+}

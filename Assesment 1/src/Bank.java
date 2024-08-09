@@ -1,0 +1,42 @@
+import java.util.Random;
+public class Bank 
+{ 
+	String Accountholder;
+	char Ifccode;
+	float bankloan;
+    double rateofintrest;
+    int totalloan;
+public static void main(String[] args) 
+	{ 
+		Bank Sbi=new Bank();
+		Sbi.Accountholder="ajaykumar";
+		Sbi.Ifccode='S';
+		Sbi.bankloan=200000;
+		//Sbi.rateofintrest=5.5;
+		Sbi.display();
+		Sbi.calculate();
+		Bank Lic=new Bank();
+		Lic.Accountholder="Sunny";
+		Lic.Ifccode='L';
+		Lic.bankloan=300000;
+		Lic.display();
+		Lic.calculate();
+	}
+public void calculate()
+{
+	if(bankloan>=100000&&bankloan<200000)
+	  rateofintrest=2.5;
+	else if(bankloan>20000&&bankloan>300000)
+		rateofintrest=1.5;
+	else if(bankloan>300000&&bankloan>400000)
+		rateofintrest=1;
+	System.out.println("rate of intrest:"+rateofintrest);
+	totalloan=(int) (rateofintrest*bankloan);
+	System.out.println("totalloan amount"+totalloan);
+}
+void display()
+   {
+	System.out.println(Accountholder+" "+Ifccode+" "+bankloan);
+   }
+}
+ 

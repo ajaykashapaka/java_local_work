@@ -1,0 +1,20 @@
+package Source;
+
+public class Fib {
+
+	public static void main(String[] args)
+	{ 
+		int first=0,second=1,third;
+		
+		for(int i=0;i<=10;i++)  //
+		{
+			third=first+second; //0+1=1
+			System.out.print(third+" ");
+			first=second; // 
+			second=third; // s=1
+			 
+		}
+		
+	}
+
+}

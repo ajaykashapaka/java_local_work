@@ -1,0 +1,41 @@
+package Source;
+public class Demo1 {
+	public static void main(String[] args)
+	{
+		Test1 t=new Test1();
+		Dto1 r=new Dto1();
+		r=t.method1("Ajay","knr");
+       System.out.println(r.Getname()+" "+r.Getvil());
+	}
+}
+class Test1
+{
+   public Dto1 method1(String nm,String vl)
+	{
+	  Dto1  d=new Dto1();
+		 d.Setname(nm);
+	     d.Setvil(vl);
+	    return d;
+	}
+}
+class Dto1
+{
+	private String name;
+	private String vil;
+	public void Setname(String nm)
+	{
+		this.name=nm;
+	}
+	public void Setvil(String vl)
+	{
+		this.vil=vl;
+	}
+	public String Getname()
+	{
+		return name;
+	}
+	public String Getvil()
+	{
+		return vil;
+	}
+}
